@@ -1,0 +1,31 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.10"
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install ruff pytest
+        if [ -f CONTROLE_MED/requirements.txt ]; then pip install -r CONTROLE_MED/requirements.txt; fi
+
+    - name: Run Linting (Ruff)
+      run: ruff check CONTROLE_MED/
+
+    - name: Run Tests (Pytest)
+      run: pytest CONTROLE_MED/tests/
