@@ -16,10 +16,10 @@ A falta de adesão correta a tratamentos medicamentosos é um problema grave de 
 
 ## 🚀 Como Executar
 1. Clone o repositório:
-- *git clone https://github.com/Puppyla/controle-de-medicamentos.git
+-- git clone https://github.com/Puppyla/controle-de-medicamentos.git
 
 2. Instale as dependências:
-- *pip install -r CONTROLE_MED/requirements.txt
+- pip install -r CONTROLE_MED/requirements.txt
 
 3. Execute a aplicação:
-- *python CONTROLE_MED/src/app.py
+- python CONTROLE_MED/src/app.py
