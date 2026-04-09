@@ -34,6 +34,5 @@ Para validar a lógica e a qualidade do código, execute:
 # ⚙️ Integração Contínua (CI)
 A cada alteração no código, o GitHub Actions executa automaticamente a pipeline de validação (Linting e Testes), garantindo a integridade do projeto.
 
-# Autora: Laura
-
-# Curso: ADS - CEUB Taguatinga
+Autora: Laura
+Curso: ADS - CEUB Taguatinga
