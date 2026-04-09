@@ -4,7 +4,7 @@
 ## 📖 Visão Geral
 Este projeto é uma aplicação de linha de comando (CLI) desenvolvida em Python para auxiliar pessoas que utilizam medicação contínua. A ferramenta permite registrar, listar e remover horários de remédios, garantindo maior organização e segurança no tratamento.
 
-## 🎯 Problema Real (Dor Social)
+## 🎯 Problema Real 
 A falta de adesão correta a tratamentos medicamentosos é um problema grave de saúde pública. Idosos e pacientes com múltiplas prescrições frequentemente esquecem horários ou duplicam doses. Esta aplicação visa amenizar essa dor, oferecendo um controle simples e acessível.
 
 ## 🛠️ Tecnologias e Ferramentas
@@ -16,10 +16,10 @@ A falta de adesão correta a tratamentos medicamentosos é um problema grave de 
 
 ## 🚀 Como Executar
 1. Clone o repositório:
-*git clone https://github.com/Puppyla/controle-de-medicamentos.git
+-*git clone https://github.com/Puppyla/controle-de-medicamentos.git
 
 2.Instale as dependências:
-*pip install -r CONTROLE_MED/requirements.txt
+-*pip install -r CONTROLE_MED/requirements.txt
 
 3.Execute a aplicação:
-*python CONTROLE_MED/src/app.py
+-*python CONTROLE_MED/src/app.py
