@@ -16,10 +16,24 @@ A falta de adesão correta a tratamentos medicamentosos é um problema grave de 
 
 ## 🚀 Como Executar
 1. Clone o repositório:
--- git clone https://github.com/Puppyla/controle-de-medicamentos.git
+- git clone https://github.com/Puppyla/controle-de-medicamentos.git
 
 2. Instale as dependências:
 - pip install -r CONTROLE_MED/requirements.txt
 
 3. Execute a aplicação:
 - python CONTROLE_MED/src/app.py
+
+# 🧪 Testes e Qualidade
+Para validar a lógica e a qualidade do código, execute:
+
+- Testes: pytest CONTROLE_MED/tests/
+
+- Lint (Ruff): ruff check CONTROLE_MED/
+
+# ⚙️ Integração Contínua (CI)
+A cada alteração no código, o GitHub Actions executa automaticamente a pipeline de validação (Linting e Testes), garantindo a integridade do projeto.
+
+# Autora: Laura
+
+# Curso: ADS - CEUB Taguatinga
