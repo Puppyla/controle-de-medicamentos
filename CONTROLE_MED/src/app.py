@@ -24,13 +24,28 @@ def remover():
     else:
         medicamentos.pop(i)
         print("Removido!")
+def editar():
+    i = int(input("Índice: "))
+
+    if i < 0 or i >= len(medicamentos):
+        print("Erro: índice inválido")
+    else:
+        nome = input("Novo nome do remédio: ")
+        horario = input("Novo horário: ")
+
+        if nome == "" or horario == "":
+            print("Erro: dados vazios")
+        else:
+            medicamentos[i] = [nome, horario]
+            print("Medicamento atualizado!")
 
 def menu():
     while True:
         print("\n1 - Adicionar")
         print("2 - Listar")
         print("3 - Remover")
-        print("4 - Sair")
+        print("4 - Editar")
+        print("5 - Sair")
 
         op = input("Escolha: ")
 
@@ -44,6 +59,9 @@ def menu():
             remover()
 
         elif op == "4":
+            editar()
+
+        elif op == "5":
             break
 
         else:
