@@ -1,3 +1,17 @@
+import os
+from dotenv import load_dotenv
+from supabase import create_client, Client
+
+# Carrega as variáveis do arquivo .env
+load_dotenv()
+
+# Pega a URL e a Chave de forma segura
+url: str = os.environ.get("SUPABASE_URL")
+key: str = os.environ.get("SUPABASE_KEY")
+
+# Cria a conexão oficial com o banco do grupo
+supabase: Client = create_client(url, key)
+
 medicamentos = []
 
 def adicionar():
